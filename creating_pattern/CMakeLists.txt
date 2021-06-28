@@ -1,0 +1,5 @@
+add_executable(absfactory absfactory.cpp)
+add_executable(factory factory.cpp)
+add_executable(prototype prototype.cpp)
+add_executable(builder builder.cpp)
+add_executable(singleton singleton.cpp)
