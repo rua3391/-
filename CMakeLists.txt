@@ -19,3 +19,4 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY_RELEASE ${ROOT_BIN_OUT_DIR})
 
 add_subdirectory(${PROJECT_SOURCE_DIR}/creating_pattern)
 add_subdirectory(${PROJECT_SOURCE_DIR}/structural_pattern)
+add_subdirectory(${PROJECT_SOURCE_DIR}/behavioral_pattern)

@@ -46,13 +46,13 @@ class vector
         {
             if(need_resize())
                 resize();
-            _alloc.construct(_emp++, i);
+            _alloc.construct(_emp++, std::forward<T&>(i));
         }
         void push_back(const T&& i)
         {
             if(need_resize())
                 resize();
-            _alloc.construct(_emp++, i);
+            _alloc.construct(_emp++, std::forward<T>(i));
         }
         void pop_back()
         {
