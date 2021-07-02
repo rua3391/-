@@ -1,3 +1,7 @@
 add_executable(chain chain.cpp)
 add_executable(command command.cpp)
 add_executable(interpreter interpreter.cpp)
+add_executable(iterator iterator.cpp)
+add_executable(mediator mediator.cpp)
+add_executable(memento memento.cpp)
+add_executable(observer observer.cpp)
