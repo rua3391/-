@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-
+#include <string>
 // 外观模式
 // 意图: 为一系列接口提供统一的界面
 

@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 
 // 装饰者模式
 // 意图: 动态的为一个类的实例增加额外功能
