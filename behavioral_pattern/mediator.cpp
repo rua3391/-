@@ -42,26 +42,21 @@ class chatRoom : public Mediator
 class Colleague
 {
     public:
-        Colleague(Mediator *mediator, const std::string &name) : _name(name){
-            _observer.push_back(mediator);
+        Colleague(Mediator *mediator, const std::string &name) : _name(name), _chatroom(mediator){
             mediator->update(this, online);
         }
         void gotMsg(const std::string &msg){
             std::cout << _name << " got msg " << msg << std::endl;
         }
         void sendMsg(const std::string &msg){
-            for(auto i : _observer){
-                i->sendmsg(this, msg);
-            }
+            _chatroom->sendmsg(this, msg);
         }
         ~Colleague()
         {
-            for(auto i : _observer){
-                i->update(this, offline);
-            }
+            _chatroom->update(this, offline);
         }
     private:
-        std::list<Mediator *> _observer;
+        Mediator * _chatroom;
         std::string _name;
 };
 
