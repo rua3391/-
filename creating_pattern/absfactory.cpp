@@ -107,5 +107,6 @@ int main()
     product* fruit2 = fac2->createProduct2();
     (*fruit1)();
     (*fruit2)();
+    
     return 0;
 }
