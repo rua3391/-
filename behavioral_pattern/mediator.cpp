@@ -88,4 +88,5 @@ int main()
     Colleague *coll2 = new Colleague(chat, "rx79");
     coll1->sendMsg("123321");
     std::cout << std::endl;
+    return 0;
 }
