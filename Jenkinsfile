@@ -4,8 +4,8 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'test stage'
-                // ls -l
-                cd bin && chain
+                ls -l
+                // cd bin && chain
             }
         }
         stage('Build') {
