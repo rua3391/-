@@ -4,7 +4,7 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'test stage'
-                ls -l
+                sh 'ls -l'
                 // cd bin && chain
             }
         }
