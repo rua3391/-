@@ -3,8 +3,19 @@ pipeline {
     stages {
         stage('Test') {
             steps {
-                sh 'node --version'
-                sh 'svn --version'
+                echo 'test stage'
+                // ls -l
+                cd bin && chain
+            }
+        }
+        stage('Build') {
+            steps {
+                echo 'build stage'
+            }
+        }
+        stage('deploy') {
+            steps {
+                echo 'deploy stage'
             }
         }
     }
