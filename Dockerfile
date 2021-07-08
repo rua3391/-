@@ -1,4 +1,4 @@
-FROM ubuntu:20.04
+FROM harbor.corp.sdo.com/library/ubuntu:20.04_local
 
 ADD . /data/
 WORKDIR /data/
