@@ -5,7 +5,7 @@ pipeline {
             steps {
                 echo 'test stage'
                 sh 'ls -l'
-                sh 'cd bin && chain'
+                sh 'docker ps -a'
             }
         }
         stage('Build') {
